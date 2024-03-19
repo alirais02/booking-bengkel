@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 public class Car extends Vehicle {
@@ -18,4 +17,8 @@ public class Car extends Vehicle {
 		this.numberOfDoor = numberOfDoor;
 	}
 
+	public Car(int numberOfDoor) {
+		this.numberOfDoor = numberOfDoor;
+	}
+	
 }
